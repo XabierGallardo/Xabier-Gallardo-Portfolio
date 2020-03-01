@@ -39,6 +39,10 @@
 
 /*	General styles 	*/
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--clr-light);
 	color: var(--clr-dark);
@@ -175,7 +179,7 @@ header {
 .nav__link {
 	color: inherit;
 	font-weight: var(--fw-bold);
-	font-size: var(--fs-h2);
+	font-size: var(--fs-h1);
 	text-decoration: none;
 }
 
@@ -194,8 +198,28 @@ header {
 	z-index: 1000;
 }
 
-.nav-open {
+.nav-open .nav {
 	transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+	position: fixed;
+}
+
+.nav-open .hamburger {
+	transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::after {
+	transform: rotate(90deg);
+}
+
+.nav-open .hamburger::before {
+	transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+	opacity: 0;
 }
 
 .hamburger {
