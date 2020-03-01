@@ -116,6 +116,7 @@ h3 {	font-size: var(--fs-h3) }
 .section__subtitle {
 	margin: 0;
 	font-size: var(--fs-h3);
+	color: var(--clr-dark);
 }
 
 .section__subtitle--intro,
@@ -193,6 +194,10 @@ header {
 	z-index: 1000;
 }
 
+.nav-open {
+	transform: translateX(0);
+}
+
 .hamburger {
 	display: block;
 	position: relative;
@@ -201,7 +206,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-	background: var(--clr-dark);
+	background: var(--clr-accent);
 	width: 2em;
 	height: 3px;
 	border-radius: 1em;
@@ -371,7 +376,7 @@ header {
 
 .portfolio {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .portfolio__item {
