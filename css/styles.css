@@ -331,6 +331,10 @@ header {
 	margin: 0 auto;
 }
 
+.service p {
+	font-size: var(--fs-h3);
+}
+
 @media (min-width: 800px) {
 	.services {
 		display: flex;
@@ -465,6 +469,7 @@ header {
 
 .social-list__item {
 	margin: 0.5em;
+	font-size: var(--fs-h2);
 }
 
 .social-list__link {
