@@ -329,10 +329,13 @@ header {
 .service {
 	max-width: 500px;
 	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
-.service p {
-	font-size: var(--fs-h3);
+.skills:hover {
+	color: var(--clr-accent);
+	cursor: default;
 }
 
 @media (min-width: 800px) {
@@ -348,7 +351,6 @@ header {
 	}
 }
 
-
 .about-me {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -358,7 +360,6 @@ header {
 	max-width: 300px;
 	margin: 0 auto;
 }
-
 
 @media (min-width: 600px) {
 	.about-me {
@@ -404,12 +405,13 @@ header {
 
 .portfolio {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .portfolio__item {
 	background: var(--clr-accent);
 	overflow: hidden;
+	margin: 0 auto;
 }
 
 .portfolio__img {
@@ -427,6 +429,12 @@ header {
 .portfolio__item:focus .portfolio__img {
 	transform: scale(1.2);
 	opacity: .75;
+}
+
+@media (max-width: 870px) {
+	.portfolio {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
 }
 
 
@@ -469,7 +477,6 @@ header {
 
 .social-list__item {
 	margin: 0.5em;
-	font-size: var(--fs-h2);
 }
 
 .social-list__link {
