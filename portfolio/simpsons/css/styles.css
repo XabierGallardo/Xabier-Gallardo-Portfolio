@@ -10,7 +10,7 @@ body {
 
 #logo {
 	position: absolute;
-	width: 450px;
+	width: 300px;
 	left: 10px;
 	border-radius: 10px;
 	border: 2px solid;
@@ -20,7 +20,7 @@ body {
 	display: flex;
 	align-items: baseline;
 	margin-left: 10px;
-	width: 97%;
+	width: 96%;
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 10px;
 	border: 2px solid;
@@ -34,14 +34,14 @@ body {
 
 #board {
 	margin: 0 auto;
-	width: 738px;
+	width: 615px;
 }
 
 .card {
 	border:2px solid;
 	border-radius: 10px;
-	width: 160px;
-	height: 260px;
+	width: 130px;
+	height: 210px;
 	margin: 10px;
 	float: left;
 	background-repeat: no-repeat;
@@ -53,10 +53,8 @@ body {
 
 
 #score, #clock, #reset {
-	font-size: 38px;
+	font-size: 32px;
 	flex: 1;
-	padding-top: 2%;
-	padding-bottom: 2%;
 	text-align: center;
 }
 
@@ -83,10 +81,11 @@ body {
 	z-index: 100;
 	opacity: .9;
 	background-color: whitesmoke;
-	width: 99.6%;
-	height: 105%;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	display: none;
+	left: 0
 }
 
 #victory div, #gameOver div {
@@ -127,21 +126,29 @@ body {
 }
 
 /*Media queries*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1300px) {
+	#logo {
+		position: relative;
+		margin-left: 19%;
+	}
+
 	#board {
-		width: 615px;
+		width: 553px;
 	}
+
 	.card {
-		width: 130px;
-		height: 230px;
-	}
-	#score, #clock, #reset {
-	font-size: 28px;
+		width: 115px;
+		height: 175px;
 	}
 }
+
+
 @media screen and (max-width: 630px) {
 	#board {
-		width: 495px;
+		width: 493px;
+	}
+	#logo {
+		margin-left: 18%;
 	}
 	.card {
 		width: 100px;
@@ -153,7 +160,10 @@ body {
 }
 @media screen and (max-width: 510px) {
 	#board {
-		width: 380px;
+		width: 373px;
+	}
+	#logo {
+		width: 220px;
 	}
 	.card {
 		width: 70px;
@@ -166,5 +176,9 @@ body {
 @media screen and (max-width: 390px) {
 	#board {
 		width: 280px;
+	}
+	#logo {
+		margin-left: 0;
+		width: 267px;
 	}
 }
