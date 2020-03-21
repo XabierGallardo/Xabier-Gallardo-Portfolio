@@ -504,3 +504,9 @@ header {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
+
+.repo__btn {
+	font-weight: var(--fw-bold);
+	text-decoration: none;
+	color: var(--clr-dark);
+}

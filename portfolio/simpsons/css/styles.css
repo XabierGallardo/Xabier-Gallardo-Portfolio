@@ -1,0 +1,170 @@
+@font-face {
+	font-family: simpsons;
+	src: url(../fonts/simpsonsFont.otf);
+}
+
+body {
+	background-color: gainsboro;
+	background-image: url("../img/wallpaper2.jpg");
+}
+
+#logo {
+	position: absolute;
+	width: 450px;
+	left: 10px;
+	border-radius: 10px;
+	border: 2px solid;
+}
+
+#timer {
+	display: flex;
+	align-items: baseline;
+	margin-left: 10px;
+	width: 97%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	border: 2px solid;
+}
+
+#content {
+	display: flex;
+	align-items: center;
+	font-family: simpsons;
+}
+
+#board {
+	margin: 0 auto;
+	width: 738px;
+}
+
+.card {
+	border:2px solid;
+	border-radius: 10px;
+	width: 160px;
+	height: 260px;
+	margin: 10px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: white;
+	transition: background 0.3s ease-in-out;
+}
+
+
+#score, #clock, #reset {
+	font-size: 38px;
+	flex: 1;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+#reset {
+	text-align: center;
+}
+
+#reset a {
+	text-decoration: none;
+	color: black;
+}
+
+#clock:hover, #score:hover, #reset:hover, #reset:hover a {
+    	background-color: black;
+	color: #15709e;
+	cursor: default;
+}
+
+#reset a:hover {
+	cursor: pointer;
+}
+
+#victory, #gameOver {
+	z-index: 100;
+	opacity: .9;
+	background-color: whitesmoke;
+	width: 99.6%;
+	height: 105%;
+	position: absolute;
+	display: none;
+}
+
+#victory div, #gameOver div {
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+#victory h1, #gameOver h1 {
+	font-size: 64px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 200px;
+	width: 100%;
+}
+
+#victory .scoreAlert, #gameOver .scoreAlert{
+	font-size: 40px;
+	text-align: center;
+}
+
+#victory div button, #gameOver div button {
+	font-size: 48px;
+	text-decoration: none;
+	padding: 18px;
+	font-weight: 600;
+	font-size: 25px;
+	color: #ffffff;
+	background-color: #1883ba;
+	border-radius: 6px;
+	font-family: simpsons;
+}
+
+#victory div button:hover, #gameOver div button:hover {
+	color: #ffffff;
+	background-color: #15709e;
+	cursor: pointer;
+}
+
+/*Media queries*/
+@media screen and (max-width: 750px) {
+	#board {
+		width: 615px;
+	}
+	.card {
+		width: 130px;
+		height: 230px;
+	}
+	#score, #clock, #reset {
+	font-size: 28px;
+	}
+}
+@media screen and (max-width: 630px) {
+	#board {
+		width: 495px;
+	}
+	.card {
+		width: 100px;
+		height: 160px;
+	}
+	#score, #clock, #reset {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 510px) {
+	#board {
+		width: 380px;
+	}
+	.card {
+		width: 70px;
+		height: 110px;
+	}
+	#score, #clock, #reset {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 390px) {
+	#board {
+		width: 280px;
+	}
+}
